@@ -37,30 +37,30 @@ body
 h1 
 {
     text-align: center;
-    margin: 40px;
-    font-size: 170px;
+    margin: 40px 0px;
+    font-size: 140px;
+    height: 70px;
+}
+
+h3 
+{
+    font-size: 20px;
+    padding: 0 0 10px 0;
+}
+
+h5
+{
+    margin-bottom: 50px;
 }
 
 nav > div 
 {
     cursor: pointer;
     display: inline-block;
-    border-bottom: 1px solid black;
+/*    border-bottom: 1px solid black;*/
     line-height: 15px;
+    margin: 0 10px;
 }
-/*
-
-nav > div:first-child 
-{
-    float:left;
-    margin-left: 50px;
-}
-nav > div:last-child 
-{
-    float:right;
-    margin-right: 50px;
-}
-*/
 
 nav > div.active
 {
