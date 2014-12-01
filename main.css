@@ -50,7 +50,7 @@ h3
 
 h5
 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 nav > div 
@@ -70,9 +70,8 @@ nav > div.active
 
 .mainBox 
 {
-    padding:50px;
+    padding: 40px 5px;
     line-height: 20px;
-
 }
 
 #container
