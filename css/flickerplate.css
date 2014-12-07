@@ -3,10 +3,13 @@
     font-family:'flickerplate';
     src:url("icon-font-flickerplate/icomoon.eot?c4hmew");
     src:url("icon-font-flickerplate/icomoon.eot?#iefixc4hmew") 
-        format("embedded-opentype"),url("icon-font-flickerplate/icomoon.woff?c4hmew") format("woff"),url("icon-font-flickerplate/icomoon.ttf?c4hmew")           format("truetype"),url("icon-font-flickerplate/icomoon.svg?c4hmew#icomoon") format("svg");font-weight:normal;
-    font-style:normal}
+    format("embedded-opentype"),url("icon-font-flickerplate/icomoon.woff?c4hmew") format("woff"),url("icon-font-flickerplate/icomoon.ttf?c4hmew")
+    format("truetype"),url("icon-font-flickerplate/icomoon.svg?c4hmew#icomoon") format("svg");font-weight:normal;
+    font-style:normal
+}
 
-.flickerplate{
+.flickerplate
+{
     position:relative;
     width:100%;
     height:400px;
@@ -70,32 +73,86 @@
 
 .flickerplate ul.flicks>li .flick-sub-text
 {
-    padding:55px;
+    margin: auto;
     text-align:center;
-    line-height:42px;
-    line-height:2.625rem;
     font-size:16px;
     font-size:1rem;
     font-weight:300;
 }
 
-.flickerplate ul.flicks>li .flick-title span.flick-block-text,.flickerplate ul.flicks>li .flick-sub-text span.flick-block-text{padding-left:18px;padding-right:18px;padding-top:12px;padding-bottom:12px;}
+.flickerplate ul.flicks>li .flick-title span.flick-block-text,.flickerplate ul.flicks>li .flick-sub-text span.flick-block-text
+{
+    padding-left:18px;
+    padding-right:18px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
 
-.flickerplate .arrow-navigation{display:block;position:absolute;top:10%;width:10%;height:80%;z-index:100;overflow:hidden;font-family:"flickerplate";vertical-align:middle}
+.flickerplate .arrow-navigation
+{
+    display:block;
+    position:absolute;
+    top:10%;
+    width:10%;
+    height:80%;
+    z-index:100;
+    overflow:hidden;
+    font-family:"flickerplate";
+    vertical-align:middle
+}
 
-.flickerplate .arrow-navigation:before{position:absolute;top:50%;left:50%;margin-left:-25px;margin-top:-25px;height:50px;width:50px;opacity:0;filter:alpha(opacity=0);text-align:center;color:#fff;font-size:48px;font-size:3rem;-webkit-transition:opacity 0.2s ease-out;-moz-transition:opacity 0.2s ease-out;-o-transition:opacity 0.2s ease-out;-ms-transition:opacity 0.2s ease-out;transition:opacity 0.2s ease-out}
+.flickerplate .arrow-navigation:before
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-25px;
+    margin-top:-25px;
+    height:50px;
+    width:50px;
+    opacity:0;
+    filter:alpha(opacity=0);
+    text-align:center;
+    color:#fff;
+    font-size:48px;
+    font-size:3rem;
+    -webkit-transition:opacity 0.2s ease-out;
+    -moz-transition:opacity 0.2s ease-out;
+    -o-transition:opacity 0.2s ease-out;
+    -ms-transition:opacity 0.2s ease-out;
+    transition:opacity 0.2s ease-out
+}
 
-.no-touch .flickerplate .arrow-navigation:hover{cursor:pointer}
+.no-touch .flickerplate .arrow-navigation:hover
+{
+    cursor:pointer
+}
 
-.no-touch .flickerplate .arrow-navigation:hover.left:before,.no-touch .flickerplate .arrow-navigation:hover.right:before{opacity:1;filter:alpha(opacity=100)}
+.no-touch .flickerplate .arrow-navigation:hover.left:before,.no-touch .flickerplate .arrow-navigation:hover.right:before
+{
+    opacity:1;
+    filter:alpha(opacity=100)
+}
 
-.no-touch .flickerplate .arrow-navigation:active.left:before,.no-touch .flickerplate .arrow-navigation:active.right:before{margin-top:-23px}
+.no-touch .flickerplate .arrow-navigation:active.left:before,.no-touch .flickerplate .arrow-navigation:active.right:before
+{
+    margin-top:-23px;
+}
 
-.flickerplate .arrow-navigation.left{left:0%}
+.flickerplate .arrow-navigation.left
+{
+    left:0%;
+}
 
-.flickerplate .arrow-navigation.left:before{content:"\f104"}
+.flickerplate .arrow-navigation.left:before
+{
+    content:"\f104";
+}
 
-.flickerplate .arrow-navigation.right{right:0%}
+.flickerplate .arrow-navigation.right
+{
+    right:0%;
+}
 
 .flickerplate .arrow-navigation.right:before{content:"\f105"}
 
