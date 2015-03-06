@@ -20,14 +20,14 @@ time, mark, audio, video {
 }
 @font-face
 {
-    font-family: PlayfairDisplay;
-    src: url(fonts/PlayfairDisplay-Regular.otf);
+    font-family: afont;
+    src: url(fonts/AmaticSC-Regular.ttf);
 }
 
 body
 {
-        font-family: PlayfairDisplay;
-
+    font-family: afont;
+    letter-spacing: 4px;
     /*font-family: tiza; 
     font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif*/
@@ -123,7 +123,7 @@ table tr td .rightarrow
     padding: 10px;
     border-bottom: 1px solid #AAA18D;
     border-radius: 0px;
-    max-width: 210px;
+    max-width: 220px;
     margin: auto;
     text-align: center;
 
