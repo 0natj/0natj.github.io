@@ -62,7 +62,6 @@ table tr
 table tr.titlemonth td
 {
     text-transform: uppercase;
-    text-decoration: underline;
     text-align: center;
     color: #CC8954;
 }
@@ -81,12 +80,13 @@ table tr td
     border-radius: 4px;
     padding: 10px;
     color:#008CC7;
+    text-transform: uppercase;
 }
 
     .eventbox .leftbox
     {
         display: inline-block;
-        width: 48%;
+        width: 40%;
         text-align: right;
     }
 
