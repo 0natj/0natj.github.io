@@ -1,0 +1,32 @@
+header
+{
+}
+
+header .title
+{
+  text-align: center;
+  padding: 20px;
+}
+
+table
+{
+    width: 100%;
+    
+}
+
+table tr.titlemonth td
+{
+    border: none;
+}
+
+table tr td
+{
+    border: 1px solid #ccc;
+}
+
+
+
+.containerlist 
+{
+
+}
