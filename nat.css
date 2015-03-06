@@ -81,12 +81,12 @@ table tr td
     padding: 10px;
     color:#008CC7;
     text-transform: uppercase;
+    text-align: center;
 }
 
     .eventbox .leftbox
     {
         display: inline-block;
-        width: 40%;
         text-align: right;
     }
 
@@ -98,7 +98,6 @@ table tr td
     .eventbox .rightbox
     {
         display: inline-block;
-        width: 50%;
         text-align: left;
     }
         .eventbox .rightbox > div
