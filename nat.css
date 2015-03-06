@@ -26,6 +26,8 @@ time, mark, audio, video {
 
 body
 {
+    background: url(img/nat/bg.png);
+
     /*font-family: tiza; 
     font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif*/
@@ -42,7 +44,7 @@ h1
     padding: 10px;
     font-size: 30px;
     text-transform: uppercase;
-    color: #FCCD46;
+    color: #662C20;
     /* font-family: tiza; */
 }
 
@@ -62,7 +64,7 @@ table tr.titlemonth td
     text-transform: uppercase;
     text-decoration: underline;
     text-align: center;
-    color: #F42131;
+    color: #CC8954;
 }
 
 table tr td
