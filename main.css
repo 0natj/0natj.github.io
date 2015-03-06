@@ -109,3 +109,27 @@ nav > div.active
     padding-bottom: 100px;
     padding-right: 10px
 }
+
+.hat1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("img/hat_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 790px;
+}
+
+.hat2 {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("img/hat_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 790px;
+}
