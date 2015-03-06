@@ -28,11 +28,22 @@ var Nat = {
     },
     event: function(eventdata) {
         var event = [];
-        event.push('<div>');
+        event.push('<div class="eventbox">');
+        
+        event.push('<div class="leftbox">');
+        event.push('<div>', "Date:", '</div>');
+        event.push('<div>', "Time:", '</div>');
+        event.push('<div>', "Verses:", '</div>');
+        event.push('<div>', "Where:", '</div>');
+        event.push('</div>');
+        
+        event.push('<div class="rightbox">');
         event.push('<div>', eventdata.Date, '</div>');
         event.push('<div>', eventdata.Time, '</div>');
         event.push('<div>', eventdata.Verses, '</div>');
         event.push('<div>', eventdata.Where, '</div>');
+        event.push('</div>');
+        
         event.push('</div>');
         
         return event.join('');
