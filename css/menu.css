@@ -1,0 +1,286 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+nav {
+    text-align: right;
+}
+
+.menu {
+	display:block;
+	position:relative;
+	width:100%;
+	padding:0px;
+	margin:0 auto !important;
+	line-height:19px !important;
+}
+.menu a {
+	text-decoration:none;
+}
+.menu .menu-main-list, .menu .menu-main-list li {
+	margin:0px;
+	padding:0px;
+}
+.menu ul {
+	display:block;
+	width:auto !important;
+	margin:0 auto !important;
+	overflow:hidden;
+	list-style:none;
+}
+
+
+/* sublevel menu - in construction */
+.menu ul li ul, .menu ul li ul li, .menu ul li ul li a {
+	display:none !important;
+	height:0px !important;
+	width:0px !important;
+}
+/* */
+
+
+.menu .menu-main-list li {
+	display:inline;
+}
+.menu-toggled {
+	display:none;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	margin:0 auto !important;
+}
+.menu-button:hover {
+	cursor:pointer;
+}
+.menu .menu-toggled ul {
+	display:none;
+	margin:0px !important;
+	padding:0px !important;
+}
+.menu .menu-toggled ul li {
+	display:block;
+	margin:0 auto !important;
+    text-align: center;
+}
+
+
+
+
+/* GRAPHITE STYLE */
+
+.menu.graphite .menu-main-list li a {
+	display:inline-block;
+	padding:8px 30px 8px 30px;
+	margin:0px -3px 0px -3px;
+}
+
+.menu.graphite .menu-toggled-controls {
+	display:block;
+	height:36px;
+	color:black;
+	text-align:left;
+	position:relative;
+	background: white
+}
+
+.mobileMenu .menu.graphite .menu-toggled-controls {
+    border-bottom: 1px solid black;
+}
+
+.menu.graphite .menu-toggled-title {
+	position:relative;
+	top:9px;
+	left:15px;
+	font-size:16px;
+	color:white;
+	text-shadow:1px 1px 1px black;
+}
+.menu.graphite .menu-button {
+	display:block;
+	position:absolute;
+	right:15px;
+	top:8px;
+}
+
+.menu.graphite .menu-button span {
+	display:block;
+	margin-top:4px;
+	height:2px;
+	background:black;
+	width:24px;
+}
+.menu.graphite .menu-toggled ul li a {
+	display:block;
+	width:100%;
+    background-color: #3C3F41;
+    color: white;
+    padding: 10px;
+}
+.menu.graphite .menu-toggled ul li a:hover {
+    background-color: #2D2E30;
+}
+.menu.graphite .menu-toggled ul li a:active {
+	background-color:#444444;
+	border-bottom:1px solid #444444;
+	border-top:1px solid #444444;
+}
+
+
+
+/* SAPPHIRE STYLE */
+
+.menu.sapphire .menu-main-list li a {
+	display:inline-block;
+	padding:8px 30px 8px 30px;
+	margin:0px -3px 0px -3px;
+	font-size:15px;
+	text-shadow:1px 1px 1px #3e587b;
+	background-color:#537b9f;
+	border-left:1px solid #3e587b;
+	background-image:url('../menu-img/sapphire-menu-bg.png');
+	background-repeat:repeat-x;
+}
+.menu.sapphire .menu-main-list li a:hover {
+	background:#3e597b;
+}
+.menu.sapphire .menu-toggled {
+	width:95%;
+	background-color:#537b9f;
+	min-height:36px;
+	border-radius:6px;
+}
+.menu.sapphire .menu-toggled-controls {
+	display:block;
+	height:36px;
+	color:white;
+	text-align:left;
+	position:relative;
+	background-image:url('../menu-img/sapphire-menu-bg.png');
+	background-repeat:repeat-x;
+	border-radius:5px;
+}
+.menu.sapphire .menu-toggled-title {
+	position:relative;
+	top:9px;
+	left:15px;
+	font-size:16px;
+	color:white;
+	text-shadow:1px 1px 1px #3e587b;
+}
+.menu.sapphire .menu-button {
+	display:block;
+	position:absolute;
+	right:9px;
+	top:7px;
+	width:20px;
+	padding:0px 7px 0px 7px;
+	border:1px solid #3e587b;
+	border-radius:3px;
+	background-image:url('../menu-img/sapphire-menu-bg.png');
+	background-position:top;
+}
+
+.menu.sapphire .menu-button span {
+	display:block;
+	margin:4px 0px 4px 0px;
+	height:2px;
+	background:white;
+	width:20px;
+}
+.menu.sapphire .menu-toggled ul li a {
+	display:block;
+	width:100%;
+	background-color:#537698;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+	border-bottom:1px solid #3c5779;
+	border-top:1px solid #6883a6;
+	text-shadow:1px 1px 1px #333333;
+}
+.menu.sapphire .menu-toggled ul li a:active {
+	background-color:#3c5779;
+	border-bottom:1px solid #3c5779;
+	border-top:1px solid #3c5779;
+}
+.menu.sapphire .menu-toggled ul li:first-child a {
+	border-top:1px solid #3c5779 !important;
+}
+
+
+
+
+
+/* MINIMAL STYLE */
+
+.menu.minimal a {
+	color:#333333;
+}
+.menu.minimal a:hover {
+	opacity:0.7;
+}
+.menu.minimal .menu-main-list li a {
+	display:inline-block;
+	padding:8px 30px 8px 30px;
+	margin:0px -3px 0px -3px;
+	font-size:15px;
+}
+.menu.minimal .menu-toggled {
+	width:95%;
+	min-height:36px;
+}
+.menu.minimal .menu-toggled-controls {
+	display:block;
+	height:36px;
+	color:#333333;
+	text-align:left;
+	position:relative;
+}
+.menu.minimal .menu-toggled-title {
+	position:relative;
+	top:9px;
+	left:9px;
+	font-size:16px;
+	color:#33333;
+}
+.menu.minimal .menu-button {
+	display:block;
+	position:absolute;
+	right:9px;
+	top:7px;
+}
+
+.menu.minimal .menu-button span {
+	display:block;
+	margin:4px 0px 4px 0px;
+	height:2px;
+	background:#333333;
+	width:25px;
+}
+.menu.minimal .menu-toggled ul li a {
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+	border-bottom:1px solid #dedede;
+	color:#333333;
+}
+.menu.minimal .menu-toggled ul li:first-child a {
+	border-top:1px solid #dedede;
+}

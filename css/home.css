@@ -1,0 +1,96 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@font-face
+{
+    font-family: bentham;
+    src: url(../fonts/Bentham.otf);
+}
+
+body {
+    font-family: bentham;
+}
+
+
+.leftmessage {
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+}
+
+.middlebottle {
+    background: url(../img/bottle-sketch.png) center;
+    background-size: 150px;
+    width: 100%;
+    height: 197px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    text-align: center;
+    z-index: -1;
+}
+
+.mobileMenu .middlebottle { 
+    height: 260px;
+}
+
+.container {
+    margin-top: 190px;
+}
+
+.big-title {    
+    text-align: center;
+    font-size: 100px;
+}
+
+.main-content {  
+    padding: 10px;
+    max-width: 54em;
+    text-align: center;
+    margin:auto;  
+    padding-top: 40px;
+}
+
+.main-content .thing {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.main-content .thing1 {
+    background: url(../img/thing-1.png);
+}
+.main-content .thing2 {
+    background: url(../img/thing-2.png);
+}
+.main-content .thing3 {
+    background: url(../img/thing-3.png);
+}
+.main-content .thing4 {
+    background: url(../img/thing-4.png);
+}
+.main-content .thing5 {
+    background: url(../img/thing-5.png);
+}
+.main-content .thing6 {
+    background: url(../img/thing-6.png);
+}
