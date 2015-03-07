@@ -28,6 +28,11 @@ body {
     font-family: bentham;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .leftmessage {
     position: absolute;
@@ -50,6 +55,7 @@ body {
 
 .mobileMenu .middlebottle { 
     height: 260px;
+    z-index: -1;
 }
 
 .container {

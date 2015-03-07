@@ -50,11 +50,13 @@ function adaptMenu() {
         var $width = '400px';//$(this).css('max-width');
         $width = $width.replace('px', ''); 
         if ( $(this).parent().width() < $width*1.05 ) {
+            $('.header').addClass('mobileMenu');
             $('nav').addClass('mobileMenu');
             $(this).children('.menu-main-list').hide(0);
             $(this).children('.menu-toggled').show(0);
         }
         else {
+            $('.header').removeClass('mobileMenu');
             $('nav').removeClass('mobileMenu');
             $(this).children('.menu-main-list').show(0);
             $(this).children('.menu-toggled').hide(0);
