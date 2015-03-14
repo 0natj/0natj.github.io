@@ -117,7 +117,8 @@ nav {
 	display:block;
 	position:absolute;
 	right:15px;
-	top:10px;
+    top: -2px;
+    width: 30px;
 }
 
 .menu.graphite .menu-button span {
@@ -125,7 +126,7 @@ nav {
 	margin-top:4px;
 	height:2px;
 	background:black;
-	width:24px;
+	width:37px;
 }
 .menu.graphite .menu-toggled ul li a {
 	display:block;
