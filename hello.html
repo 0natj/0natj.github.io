@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>hello</title>
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<style>
+	.box {
+		margin: auto;
+		width: 190px;
+  	text-align: center;
+	}
+	input, button {
+		display: block;
+		margin-bottom:10px;
+	}
+	input {
+		width: 97%;
+	}
+	button {
+		width: 100%;
+	}
+
+
+	</style>
 </head>
 <body>
-  <div>
+  <div class="box">
     <input id="letters" type="text" />
     <button onclick="go()">Go</button>
   </div>
-  <div id="result">
+  <div id="result" class="box">
   </div>
 </body>
   <script type="text/javascript">
