@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>hello</title>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+  <div>
+    <input id="letters" type="text" />
+    <button onclick="go()">Go</button>
+  </div>
+  <div id="result">
+  </div>
+</body>
+  <script type="text/javascript">
+
+    function go()
+    {
+        var letters = $("#letters").val();
+				if (letters.length == 9)
+				{
+        	readTextFile("/words.txt")
+				}
+				else {
+					$("#result").html('Gotta be nine letters')
+				}
+    }
+
+    function readTextFile(file)
+    {
+      var rawFile = new XMLHttpRequest();
+      rawFile.open("GET", file, false);
+      rawFile.onreadystatechange = function ()
+      {
+          if(rawFile.readyState === 4)
+          {
+              if(rawFile.status === 200 || rawFile.status == 0)
+              {
+                  var allText = rawFile.responseText;
+									var retval = allText.split("\n");
+
+									findwords(retval);
+              }
+          }
+      }
+      rawFile.send(null);
+    }
+
+		function findwords(words)
+		{
+			var pairs = [];
+			var raw = $("#letters").val();
+			var letters = raw.toLowerCase();
+			var matches = [];
+			for (var i = 0; i < words.length; i++)
+			{
+
+				var word = words[i].replace('\\', '');
+				if (word.length == 5)
+				{
+					var isWord = true;
+          var w = word.split('');
+
+          var spots = [-1,-1,-1,-1,-1];
+
+          spots[0] = letters.indexOf(w[0]);
+          spots[1] = letters.indexOf(w[1]);
+          spots[2] = letters.indexOf(w[2]);
+          spots[3] = letters.indexOf(w[3]);
+          spots[4] = letters.indexOf(w[4]);
+
+          var unique = [];
+
+          if (spots[0] != -1 && spots[1] != -1 && spots[2] != -1 && spots[3] != -1 && spots[4] != -1 )
+          {
+            //  $.each(spots, function(i, el){
+            //    if($.inArray(el, unique) === -1) unique.push(el);
+            //  });
+						//  //console.log(unique);
+            //  if (unique.length == 5)
+            //  {
+						//    matches.push(word);
+            //  }
+						matches.push(word);
+          }
+				}
+
+			}
+
+			console.log('matches', matches)
+
+
+			for (var i = 0; i < matches.length; i++)
+      {
+				for (var j = 0; j < matches.length; j++)
+				{
+					if (matches[i] !== matches[j]);
+					{
+						if (matches[i].charAt(2) === matches[j].charAt(2))
+						{
+							var lettersArr = letters.split('');
+							//console.log(lettersArr, matches[i]);
+
+							var isGood = true;
+							for (var k = 0; k < 5; k++)
+							{
+								//debugger;
+								var aLetter = matches[i].charAt(k);
+								var a = lettersArr.indexOf(aLetter);
+								//console.log(k, matches[i].charAt(k), a, lettersArr)
+								//if (k != 2 )
+								//{
+									if (a != -1 && aLetter)
+									{
+										lettersArr.splice(a, 1);
+										//lettersArr = lettersArr.slice(0,a) + lettersArr.slice(a+1)
+									}
+									else
+									{
+										isGood = false;
+									}
+								//}
+							}
+
+							for (var l = 0; l < 5; l++)
+							{
+								var bLetter = matches[j].charAt(l)
+								var b = lettersArr.indexOf(bLetter);
+								if (l != 2)
+								{
+									if (b != -1 && bLetter)
+									{
+										lettersArr.splice(b, 1);
+										//lettersArr = lettersArr.slice(0,a) + lettersArr.slice(a+1)
+									}
+									else
+									{
+										isGood = false;
+									}
+								}
+							}
+							if (isGood)
+							{
+								var check = true;
+								for (var p = 0; p < pairs.length; p++)
+								{
+									if(pairs[p].one == matches[j] && pairs[p].two == matches[i])
+									{
+										check = false;
+									}
+								}
+								if (check)
+								{
+									pairs.push({one:matches[i], two: matches[j]});
+								}
+							}
+						}
+					}
+
+				}
+      }
+
+			var html = '';
+			if (pairs.length < 1)
+			{
+				$("#result").html('<label>Oh can\'t figure it out sorry</label>')
+
+			}
+			else
+			{
+				for(var i = 0; i < pairs.length; i++)
+				{
+					html += pairs[i].one + ", " + pairs[i].two + '<br />';
+				}
+				$("#result").html(html)
+			}
+		}
+
+  </script>
+</html>
