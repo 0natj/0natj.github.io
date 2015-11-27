@@ -45,6 +45,23 @@ nav.mobileMenu
     border-bottom: 1px solid;
 }
 
+nav.mobileMenu .menu.graphite .menu-toggled a
+{
+	border: none;
+    padding-bottom: 6px;
+    font-size: 22px;
+}
+nav.mobileMenu .menu.graphite .menu-toggled a.active
+{
+    background-color: #FF8F96;
+}
+
+
+nav.mobileMenu .menu a.active
+{
+	border: none;
+}
+
 .menu .menu-main-list, .menu .menu-main-list li {
 	margin:0px;
 	padding:0px;
