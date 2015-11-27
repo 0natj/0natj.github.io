@@ -12,9 +12,9 @@ h4 {
 }
 
 .hamburglar {
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.4);
+      -ms-transform: scale(0.4);
+          transform: scale(0.4);
 /*  margin: 40px auto;*/
   position: relative;
   display: block;

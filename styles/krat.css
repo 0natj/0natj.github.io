@@ -91,6 +91,7 @@ ul li a
     color: #A89F01;
     position: absolute;
     top: 20px;
+    cursor: pointer;
 }
 
 .title.small
@@ -174,7 +175,7 @@ ul li a
 
 .main-box .bit-one .an-imgage
 {
-    background: url(../img/thing-1.png);
+    background: url(../img/image.png);
     display: table;
     overflow: hidden;
     min-height: 30vw;
@@ -183,11 +184,16 @@ ul li a
     margin: auto;
 }
 
+.main-box.mobile .bit-one .an-imgage
+{
+    min-height: 50vw;
+}
+
 .main-box .bit-two
 {
     width: 49%;
     display: inline-block;
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     vertical-align: top;
     padding: 1em;
@@ -196,7 +202,7 @@ ul li a
 
 .main-box .bit-two > div:first-child
 {
-    font-size: 50px;
+    font-size: 40px;
 
 }
 
