@@ -39,6 +39,12 @@ nav.mobileMenu
 .menu a {
 	text-decoration:none;
 }
+
+.menu a.active
+{
+    border-bottom: 1px solid;
+}
+
 .menu .menu-main-list, .menu .menu-main-list li {
 	margin:0px;
 	padding:0px;
@@ -92,8 +98,8 @@ nav.mobileMenu
 
 .menu.graphite .menu-main-list li a {
 	display:inline-block;
-	padding:8px 30px 8px 30px;
-	margin:0px -3px 0px -3px;
+	margin:8px 30px 8px 30px;
+	/*margin:0px -3px 0px -3px; */
     color: black;
 }
 
@@ -291,3 +297,5 @@ nav.mobileMenu
 .menu.minimal .menu-toggled ul li:first-child a {
 	border-top:1px solid #dedede;
 }
+
+

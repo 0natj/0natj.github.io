@@ -97,39 +97,36 @@
 				if (word.length == 5)
 				{
 					var isWord = true;
-          var w = word.split('');
+					var w = word.split('');
 
-          var spots = [-1,-1,-1,-1,-1];
+					var spots = [-1,-1,-1,-1,-1];
 
-          spots[0] = letters.indexOf(w[0]);
-          spots[1] = letters.indexOf(w[1]);
-          spots[2] = letters.indexOf(w[2]);
-          spots[3] = letters.indexOf(w[3]);
-          spots[4] = letters.indexOf(w[4]);
+					spots[0] = letters.indexOf(w[0]);
+					spots[1] = letters.indexOf(w[1]);
+					spots[2] = letters.indexOf(w[2]);
+					spots[3] = letters.indexOf(w[3]);
+					spots[4] = letters.indexOf(w[4]);
 
-          var unique = [];
+					var unique = [];
 
-          if (spots[0] != -1 && spots[1] != -1 && spots[2] != -1 && spots[3] != -1 && spots[4] != -1 )
-          {
-            //  $.each(spots, function(i, el){
-            //    if($.inArray(el, unique) === -1) unique.push(el);
-            //  });
-						//  //console.log(unique);
-            //  if (unique.length == 5)
-            //  {
-						//    matches.push(word);
-            //  }
+					if (spots[0] != -1 && spots[1] != -1 && spots[2] != -1 && spots[3] != -1 && spots[4] != -1 )
+					{
+					//  $.each(spots, function(i, el){
+					//    if($.inArray(el, unique) === -1) unique.push(el);
+					//  });
+								//  //console.log(unique);
+					//  if (unique.length == 5)
+					//  {
+								//    matches.push(word);
+					//  }
 						matches.push(word);
-          }
+					}
 				}
 
 			}
 
-			console.log('matches', matches)
-
-
 			for (var i = 0; i < matches.length; i++)
-      {
+      		{
 				for (var j = 0; j < matches.length; j++)
 				{
 					if (matches[i] !== matches[j]);
