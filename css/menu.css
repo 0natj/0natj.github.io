@@ -53,7 +53,7 @@ nav.mobileMenu .menu.graphite .menu-toggled a
 }
 nav.mobileMenu .menu.graphite .menu-toggled a.active
 {
-    background-color: #FF8F96;
+    background-color: #4CA6B5;
 }
 
 
@@ -159,7 +159,7 @@ nav.mobileMenu .menu a.active
 .menu.graphite .menu-toggled ul li a {
 	display:block;
 	width:100%;
-    background-color: #3C3F41;
+    background-color: #636567;
     color: white;
     padding: 10px;
 }
