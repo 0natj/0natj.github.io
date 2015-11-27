@@ -23,6 +23,11 @@ nav {
     text-align: right;
 }
 
+nav.mobileMenu
+{
+    height: 40px;
+}
+
 .menu {
 	display:block;
 	position:relative;
@@ -102,7 +107,7 @@ nav {
 }
 
 .mobileMenu .menu.graphite .menu-toggled-controls {
-    border-bottom: 1px solid black;
+    border-bottom: 1px dashed #000;
 }
 
 .menu.graphite .menu-toggled-title {

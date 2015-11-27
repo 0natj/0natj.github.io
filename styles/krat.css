@@ -22,13 +22,13 @@ time, mark, audio, video {
 @font-face
 {
     font-family: ChelseaMarket;
-    src: url(../fonts/ChelseaMarket-Regular.ttf);
+    src: url(../fonts/Langdon.otf);
 }
 
 @font-face
 {
     font-family: AmaticSC;
-    src: url(../fonts/AmaticSC-Regular.ttf);
+    src: url(../fonts/ostrich-sans/ostrich-regular.ttf);
 }
 
 body {
@@ -42,8 +42,11 @@ header
 
 h1
 {
-    font-size: 80px;
+    font-size: 100px;
+    height: 82px;
     font-family: ChelseaMarket;
+    text-align: left;
+    padding-left: 5px;
 }
 
 nav
@@ -51,7 +54,14 @@ nav
     width:100%;
     text-align: right;
     border-bottom: 1px dashed #000;
-    padding-bottom: 10px;
+    height: 135px;
+    padding-top: 100px;
+}
+
+nav.mobileMenu
+{
+    border:none;
+    padding-top: 0;
 }
 
 ul
@@ -59,13 +69,12 @@ ul
     display: inline;
     list-style-type: none;
     padding-right: 20px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 ul li 
 {
     display: inline-block;
-    padding-left: 100px;
 }
 
 ul li a 
@@ -80,6 +89,24 @@ ul li a
     width: 25%;
     height: 90px;
     color: #A89F01;
+    position: absolute;
+    top: 20px;
+}
+
+.title.small
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+}
+
+.title.small h1
+{
+    font-size: 40px;
+    text-align: left;
+    padding: 4px;
+    top: 0;
 }
 
 .menu
@@ -91,7 +118,20 @@ ul li a
 {
     display: inline-block;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
+    position: absolute;
+    text-align: left;
+    left: 10px;
+    color: black;
+    width: 190px;
+}
+
+.small .sub-heading 
+{
+    font-size: 15px;
+    left: 90px;
+    width: 100px;
+    top: 14px;
 }
 
 .content-home
@@ -109,4 +149,66 @@ ul li a
     background-size: cover;
     width: 100%;
     
+}
+
+.main-box
+{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.main-box.mobile
+{
+    margin-top: 50px;
+}
+
+.main-box .bit-one
+{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 2em;
+    min-width: 300px;
+}
+
+.main-box .bit-one .an-imgage
+{
+    background: url(../img/thing-1.png);
+    display: table;
+    overflow: hidden;
+    min-height: 30vw;
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+}
+
+.main-box .bit-two
+{
+    width: 49%;
+    display: inline-block;
+    font-size: 60px;
+    text-align: center;
+    vertical-align: top;
+    padding: 1em;
+    min-width: 300px;
+}
+
+.main-box .bit-two > div:first-child
+{
+    font-size: 50px;
+
+}
+
+@media screen and (max-width: 600px)
+{
+    .main-box .bit-one
+    {
+        width:100%;
+    }
+    .main-box .bit-two
+    {
+        width:100%;
+    }
+
 }
