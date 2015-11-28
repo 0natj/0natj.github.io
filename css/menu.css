@@ -115,7 +115,7 @@ nav.mobileMenu .menu a.active
 
 .menu.graphite .menu-main-list li a {
 	display:inline-block;
-	margin:8px 30px 8px 30px;
+	margin:8px 15px 8px 25px;
 	/*margin:0px -3px 0px -3px; */
     color: black;
 }
