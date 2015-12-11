@@ -32,7 +32,8 @@ time, mark, audio, video {
 }
 
 body {
-    font-family: AmaticSC;
+    /*font-family: AmaticSC; */
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
 }
 
 header 
@@ -44,7 +45,7 @@ h1
 {
     font-size: 100px;
     height: 82px;
-    font-family: ChelseaMarket;
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;;
     text-align: left;
     padding-left: 5px;
 }
@@ -56,6 +57,8 @@ nav
     border-bottom: 1px dashed #000;
     height: 135px;
     padding-top: 100px;
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    text-transform: uppercase;
 }
 
 nav.mobileMenu
@@ -70,7 +73,7 @@ ul
     display: inline;
     list-style-type: none;
     padding-right: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 ul li 
@@ -89,7 +92,7 @@ ul li a
     display: inline-block;
     width: 25%;
     height: 90px;
-    color: #A89F01;
+    /*color: #A89F01;*/
     position: absolute;
     top: 20px;
     cursor: pointer;
@@ -105,9 +108,9 @@ ul li a
 
 .title.small h1
 {
-    font-size: 40px;
+    font-size: 36px;
     text-align: left;
-    padding: 4px;
+    padding-left: 4px;
     top: 0;
 }
 
@@ -219,3 +222,8 @@ ul li a
     }
 
 }
+
+
+
+
+
