@@ -1,0 +1,44 @@
+.more-box
+{
+	margin:auto;
+	max-width: 900px;
+	text-align: center;
+}
+
+.more-box h3
+{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 0 15px 0;
+}
+
+.location
+{
+}
+
+.location-image
+{
+    display: inline-block;
+    width: 49%;
+    height: 250px;
+    min-width: 300px;
+}
+
+.location-image.just-good-stuff
+{
+    background: url(../img/justgoodstuff.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220px;
+}
+
+.location-text
+{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-top: 80px;
+    text-align: left;
+    min-width: 300px;
+}

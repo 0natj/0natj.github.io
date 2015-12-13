@@ -1,0 +1,11 @@
+
+.a-hat
+{
+    background: url(../img/image.png);
+    display: inline-block;
+    overflow: hidden;
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    background-size: 200px;	
+}

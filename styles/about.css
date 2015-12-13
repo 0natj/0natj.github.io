@@ -1,16 +1,13 @@
-.about
-{
-	font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
-}
 
 .about .us
 {
-	background-image: url(../img/us.png);
-    width: 300px;
-    height: 300px;
+    background-image: url(../img/kristy_nat.png);
+    width: 230px;
+    height: 230px;
     margin: auto;
-    background-size: 300px;
+    background-size: 240px;
     border-radius: 150px;
+    background-position: bottom;
     /*
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -35,4 +32,6 @@
 {
     font-weight: bold;
     margin: 10px 0;
+    text-align: center;
+
 }

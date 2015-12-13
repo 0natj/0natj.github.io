@@ -31,6 +31,12 @@ time, mark, audio, video {
     src: url(../fonts/ostrich-sans/ostrich-regular.ttf);
 }
 
+@font-face
+{
+    font-family: caviar_dreams;
+    src: url(../fonts/caviar_dreams/CaviarDreams.ttf);
+}
+
 body {
     /*font-family: AmaticSC; */
     font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
@@ -43,21 +49,22 @@ header
 
 h1
 {
-    font-size: 100px;
-    height: 82px;
-    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;;
+    font-size: 70px;
+    height: 70px;
+    font-family: caviar_dreams;
+    font-weight: bold;
     text-align: left;
-    padding-left: 5px;
+    padding-left: 35px;
 }
 
 nav
 {
     width:100%;
     text-align: right;
-    border-bottom: 1px dashed #000;
-    height: 135px;
-    padding-top: 100px;
-    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    border-bottom: 1px solid #000;
+    height: 105px;
+    padding-top: 65px;
+    font-family: caviar_dreams;
     text-transform: uppercase;
 }
 
@@ -73,7 +80,7 @@ ul
     display: inline;
     list-style-type: none;
     padding-right: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 ul li 
@@ -117,6 +124,12 @@ ul li a
 .menu
 {
     display: inline-block;
+    padding-right: 15px;
+}
+
+nav.mobileMenu .menu
+{
+    padding-right: 0;
 }
 
 .sub-heading
@@ -160,6 +173,7 @@ ul li a
 {
     margin-top: 30px;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .main-box.mobile
@@ -221,6 +235,12 @@ ul li a
         width:100%;
     }
 
+}
+
+.contact-box
+{
+    text-align: center;
+    padding: 4em;
 }
 
 
