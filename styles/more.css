@@ -10,7 +10,7 @@
     font-size: 30px;
     text-align: center;
     font-weight: bold;
-    padding: 0 0 15px 0;
+    padding: 0 0 30px 0;
 }
 
 .location
@@ -21,7 +21,7 @@
 {
     display: inline-block;
     width: 49%;
-    height: 250px;
+    height: 215px;
     min-width: 300px;
 }
 
@@ -38,7 +38,7 @@
     display: inline-block;
     width: 50%;
     vertical-align: top;
-    padding-top: 80px;
+    padding-top: 55px;
     text-align: left;
     min-width: 300px;
 }

@@ -12,9 +12,9 @@
     background: url(../img/image.png);
     display: inline-block;
     overflow: hidden;
-    width: 200px;
-    margin: auto;
+    width: 250px;
     height: 200px;
-    background-size: 200px;	
+    background-size: 250px;
     margin: 10px;
+    background-position: center;
 }
