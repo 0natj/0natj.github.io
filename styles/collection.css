@@ -18,3 +18,112 @@
     margin: 10px;
     background-position: center;
 }
+
+.a-hat:first-child
+{
+    background: url(../img/hat1.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(2)
+{
+    background: url(../img/hat2.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(3)
+{
+    background: url(../img/hat3.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(4)
+{
+    background: url(../img/hat4.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(5)
+{
+    background: url(../img/hat5.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(6)
+{
+    background: url(../img/hat6.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(7)
+{
+    background: url(../img/hat7.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(8)
+{
+    background: url(../img/hat8.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(9)
+{
+    background: url(../img/hat9.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(10)
+{
+    background: url(../img/hat10.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(11)
+{
+    background: url(../img/hat11.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(12)
+{
+    background: url(../img/hat12.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(13)
+{
+    background: url(../img/hat13.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(14)
+{
+    background: url(../img/hat14.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(15)
+{
+    background: url(../img/other1.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(16)
+{
+    background: url(../img/other2.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(17)
+{
+    background: url(../img/other3.png);
+    background-size: cover;
+    background-position: center;
+}
+.a-hat:nth-child(18)
+{
+    background: url(../img/other4.png);
+    background-size: cover;
+    background-position: center;
+}
