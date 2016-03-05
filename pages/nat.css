@@ -21,15 +21,21 @@ time, mark, audio, video {
 @font-face
 {
     font-family: amatic-bold;
-    src: url(fonts/Amatic-Bold.ttf);
+    src: url(../fonts/Amatic-Bold.ttf);
 }
 
 @font-face
 {
     font-family: amatic-regular;
-    src: url(fonts/AmaticSC-Regular.ttf);
+    src: url(../fonts/AmaticSC-Regular.ttf);
 }
 
+
+@font-face
+{
+    font-family: caviar_dreams;
+    src: url(../fonts/caviar_dreams/CaviarDreams.ttf);
+}
 
 body
 {
@@ -43,7 +49,7 @@ body
 
 .background
 {
-    background: url(img/nat/bg2.png) center;
+    background: url(../img/nat/clouds.jpg) center;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -52,13 +58,21 @@ body
 
 .bannertitle
 {
-    background: url(img/nat/title.png) center;
+    font-family:amatic-regular;
+    width: 300px;
+    text-transform: uppercase;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    /*
+    background: url(../img/nat/title.png) center;
     background-size: 250px;
     width: 250px;
     height: 135px;
     background-repeat: no-repeat;
     margin: auto;
     padding-top: 20px;
+    */
 }
 
 table
@@ -106,7 +120,7 @@ table tr td .rightarrow
 
 .containerlist 
 {
-    max-width: 330px;
+    max-width: 300px;
     margin: auto;
     padding: 20px;
 
@@ -117,7 +131,7 @@ table tr td .rightarrow
     padding: 10px;
     border-bottom: 1px solid #AAA18D;
     border-radius: 0px;
-    max-width: 220px;
+    max-width: 300px;
     margin: auto;
     text-align: center;
 
